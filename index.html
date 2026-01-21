@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio — Visual Poetry</title>
+  <meta name="description" content="Web Publisher & Designer portfolio main page (editorial + exhibition style)." />
+
+  <!-- style.css -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+</head>
+
+<body>
+  <!-- Decorative frame controls (optional) -->
+  <div class="pf-frame" aria-hidden="true">
+    <div class="pf-frame__dot pf-frame__dot--tl"></div>
+    <div class="pf-frame__dot pf-frame__dot--tr"></div>
+    <div class="pf-frame__dot pf-frame__dot--bl"></div>
+    <div class="pf-frame__dot pf-frame__dot--br"></div>
+  </div>
+
+  <div class="pf-page">
+    <header class="pf-header">
+      <div class="pf-container">
+        <div class="pf-header__row">
+          <a class="pf-brand" href="#top" aria-label="Go to top">
+            <span class="pf-brand__mark" aria-hidden="true"></span>
+            <span>Seung Yeon</span>
+          </a>
+
+          <nav class="pf-nav" aria-label="Primary">
+            <a href="#top">Home</a>
+            <a href="#about">About</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main id="top" class="pf-main">
+      <div class="pf-container">
+        <!-- Top Grid -->
+        <section class="pf-grid" aria-label="Main hero section">
+          <!-- Left: Hero -->
+          <article class="pf-card pf-hero pf-reveal">
+            <div class="pf-divide">
+              <div class="pf-words">
+                <div class="pf-hero__top">
+                  <div class="pf-hero__chips" aria-label="Quick tags">
+                    <span class="pf-chip"><span class="pf-chip__dot" aria-hidden="true"></span>Web Publisher</span>
+                    <span class="pf-chip"><span class="pf-chip__dot" aria-hidden="true"></span>UI Designer</span>
+                    <span class="pf-chip"><span class="pf-chip__dot" aria-hidden="true"></span>Blog Marketing</span>
+                  </div>
+                </div>
+    
+                <div class="dfsb">
+                  <div class="pf-hero__headline">
+                    <h1 class="pf-title">
+                      Design<br>
+                      <span class="pf-title__sub">Publisher</span>
+                    </h1>
+                    <p class="pf-hero__desc">
+                      좋은 디자인을 더 좋은 코드로.<br>  감각은 섬세하게, 설계는 단단하게.<br> 브랜드 가치를 높이는 웹디블리셔 김승연 입니다.
+                    </p>
+                  </div>
+                  <div class="pf-hero__social">
+                    <div class="pf-social__links">
+                      <a href="https://blog.naver.com/didrh31" target="_blank" class="pf-social__item" data-text="B" aria-label="Naver Blog">B</a>
+                      <a href="https://www.instagram.com/bree__kim?igsh=aTlxdXJhM2Z2Y215" target="_blank" class="pf-social__item" data-text="I" aria-label="Instagram">I</a>
+                      <a href="https://open.kakao.com/o/sUMHyeOg" target="_blank" class="pf-social__item" data-text="K" aria-label="Kakao Talk">K</a>
+                    </div>
+                    <div class="pf-social__line"></div>
+                  </div>
+                </div>
+              </div>
+  
+              <!-- Accent media card -->
+              <div class="pf-hero-parent">
+                <figure class="pf-hero__media" aria-label="Featured visual">
+                  <div class="pf-hero__media-badge">
+                    Seungyeon
+                  </div>
+                  <img src="images/tiger3.png" alt="프로필사진1" />
+                </figure>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <!-- About marquee -->
+        <section class="pf-marquee pf-reveal" aria-label="About marquee">
+          <!-- Track duplicated to create seamless scroll -->
+          <div class="pf-marquee__track" aria-hidden="true">
+            <div class="pf-marquee__text">about<span>.</span>about<span>.</span>about<span>.</span>about<span>.</span></div>
+            <div class="pf-marquee__text">about<span>.</span>about<span>.</span>about<span>.</span>about<span>.</span></div>
+            <div class="pf-marquee__text">about<span>.</span>about<span>.</span>about<span>.</span>about<span>.</span></div>
+            <div class="pf-marquee__text">about<span>.</span>about<span>.</span>about<span>.</span>about<span>.</span></div>
+          </div>
+        </section>
+
+        <!-- Lower section -->
+        <section class="pf-lower" aria-label="Exhibition and events">
+          <!-- Left: Exhibition visual block -->
+          <article class="pf-exhibit pf-reveal" id="about">
+
+            <!-- <div class="pf-exhibit__ui">
+              <small>Designer. Seungyeon</small>
+              <span class="pf-chip">Semantic HTML5</span>
+            </div> -->
+
+            <div class="pf-exhibit__inner">
+              <figure class="pf-exhibit__photo" aria-label="Portrait">
+                <img src="images/tiger.png" alt="profile" />
+              </figure>
+            </div>
+            
+            <i class="xi-check" style="height: 18px;"></i>
+            <h3 class="pf-exhibit__title">Clean look.<br>Clean code.</h3>
+          </article>
+
+          <!-- Right: Exhibition list -->
+          <article class="pf-card pf-events pf-reveal" id="about">
+            <header class="pf-events__head">
+              <h2 class="pf-events__title">about</h2>
+              <p class="pf-events__note">
+                Seung yeon
+              </p>
+            </header>
+
+            <!-- Career Cards (4 items) -->
+            <section class="career">
+              <h3 class="section-title">
+                경력 <span class="sub-title">(프리랜서 / 프로젝트 단위 계약)</span>
+              </h3>
+
+              <ul class="career-cards">
+                <li class="career-card">
+                  <div class="career-card__left">
+                    <div class="career-card__meta">Research · School Safety Incident</div>
+                    <div class="career-card__name">하이퍼로직 학교안전사고 연구원 <span class="career-card__length">(7개월)</span></div>
+                  </div>
+                  <a class="career-card__btn" href="./portfolio/hyperlogic.html" aria-label="View Hyperlogic portfolio">Portfolio</a>
+                </li>
+
+                <li class="career-card">
+                  <div class="career-card__left">
+                    <div class="career-card__meta">Publisher · ALLPASS System</div>
+                    <div class="career-card__name">호호에듀 ALLPASS 시스템 퍼블리셔 <span class="career-card__length">(9개월)</span></div>
+                  </div>
+                  <a class="career-card__btn" href="./portfolio/hohoedu.html" aria-label="View Hohoedu portfolio">Portfolio</a>
+                </li>
+
+                <li class="career-card">
+                  <div class="career-card__left">
+                    <div class="career-card__meta">Design & Publishing · FEEDER System</div>
+                    <div class="career-card__name">두산 에너빌리티 FEEDER 시스템 디자이너/퍼블리셔 <span class="career-card__length">(2개월)</span></div>
+                  </div>
+                  <a class="career-card__btn" href="./portfolio/doosan.html" aria-label="View Doosan portfolio">Portfolio</a>
+                </li>
+
+                <li class="career-card">
+                  <div class="career-card__left">
+                    <div class="career-card__meta">Design & Publishing · Client Work</div>
+                    <div class="career-card__name">이진솔루션 디자이너/퍼블리셔 <span class="career-card__length">(1개월)</span></div>
+                  </div>
+                  <a class="career-card__btn" href="./portfolio/ejinsolution.html" aria-label="View EjinSolution portfolio">Portfolio</a>
+                </li>
+              </ul>
+            </section>
+
+            <!-- section: 장점란 -->
+            <section class="pf-benefits" aria-label="Strengths">
+              <h3 class="section-title">이런 장점이 있어요!</h3>
+
+              <ul class="pf-benefits__list">
+                <li class="pf-benefits__item">
+                  <span class="pf-benefits__text">디자인 &amp; 퍼블리싱 모두 가능해요</span>
+                </li>
+
+                <li class="pf-benefits__item">
+                  <span class="pf-benefits__text">
+                    AI를 적극적으로 활용해요 <span class="pf-benefits__muted">(GPT, 제미나이, 클로드)</span>
+                  </span>
+                </li>
+
+                <li class="pf-benefits__item">
+                  <span class="pf-benefits__text">블로그 운영 10년, 상업 글쓰기를 잘해요</span>
+                </li>
+              </ul>
+            </section>
+
+             <!-- section: 도구.툴 -->
+             <section class="tools">
+              <h3 class="section-title">작업 도구 &amp; 기술</h3>
+
+              <ul class="tools-list" aria-label="Tools and Skills">
+                <li class="tools-item" aria-label="Photoshop">
+                  <img class="tools-icon" src="images/icon/icon-photoshop.png" alt="Photoshop" />
+                  <span class="tools-name">Photoshop</span>
+                </li>
+
+                <li class="tools-item" aria-label="Figma">
+                  <img class="tools-icon" src="images/icon/icon-figma.png" alt="Figma" />
+                  <span class="tools-name">Figma</span>
+                </li>
+
+                <li class="tools-item" aria-label="HTML">
+                  <img class="tools-icon" src="images/icon/icon-html.png" alt="HTML" />
+                  <span class="tools-name">HTML</span>
+                </li>
+
+                <li class="tools-item" aria-label="CSS">
+                  <img class="tools-icon" src="images/icon/icon-css.png" alt="CSS" />
+                  <span class="tools-name">CSS</span>
+                </li>
+
+                <li class="tools-item" aria-label="jQuery">
+                  <img class="tools-icon" src="images/icon/icon-jquery.png" alt="jQuery" />
+                  <span class="tools-name">jQuery</span>
+                </li>
+
+                <li class="tools-item" aria-label="JavaScript">
+                  <img class="tools-icon" src="images/icon/icon-js.png" alt="JavaScript" />
+                  <span class="tools-name">JavaScript</span>
+                </li>
+              </ul>
+            </section>
+          </article>
+        </section>
+
+        <!-- portfolio -->
+        <section class="pf-card pf-reveal" id="portfolio">
+          <header class="pf-events__head">
+            <h2 class="pf-events__title">Portfolio</h2>
+            <p class="pf-events__note">                산출물 : 회사 내규에 따라 URL 대신 이미지로 공개합니다.
+            </p>
+          </header>
+
+          <ul class="pf-portfolio__grid" aria-label="Portfolio projects">
+            <li class="pf-portfolio__item">
+              <a class="pf-portfolio__card" href="portfolio/hyperlogic.html" aria-label="Open portfolio: Hyperlogic">
+                <figure class="pf-portfolio__thumb" aria-hidden="true">
+                  <img src="images/portfolio/hyper/hyper-thumb.png" alt="" />
+                </figure>
+                <div class="pf-portfolio__name">학교안전사고 데이터 분석</div>
+              </a>
+            </li>
+
+            <li class="pf-portfolio__item">
+              <a class="pf-portfolio__card" href="portfolio/hohoedu.html" aria-label="Open portfolio: Hohoedu">
+              <figure class="pf-portfolio__thumb">
+                <img src="images/portfolio/hoho/hoho-thumb.png" alt="호호에듀 올패스 썸네일" />
+              </figure>
+                <div class="pf-portfolio__name">호호에듀 올패스</div>
+              </a>
+            </li>
+
+            <li class="pf-portfolio__item">
+              <a class="pf-portfolio__card" href="portfolio/doosan.html" aria-label="Open portfolio: Doosan">
+              <figure class="pf-portfolio__thumb">
+                <img src="images/portfolio/doosan/doosan-thumb.png" alt="호호에듀 올패스 썸네일" />
+              </figure>
+                <div class="pf-portfolio__name">두산 원자력 피더 시스템</div>
+              </a>
+            </li>
+
+            <li class="pf-portfolio__item">
+              <a class="pf-portfolio__card" href="portfolio/ejinsolution.html" aria-label="Open portfolio: EjinSolution">
+                <figure class="pf-portfolio__thumb" aria-hidden="true">
+                  <img src="images/portfolio/ejin/ejin-thumb.png" alt="" />
+                </figure>
+                <div class="pf-portfolio__name">EjinSolution</div>
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <!-- contact -->
+        <section class="pf-card pf-reveal" id="contact">
+            <header class="pf-events__head">
+              <h2 class="pf-events__title">Contact</h2>
+              <p class="pf-events__note">
+                산출물 : 회사 내규에 따라 URL 대신 이미지로 공개합니다.
+              </p>
+            </header>
+        </section>
+
+        <footer class="pf-footer">
+          <div>© <span id="pf-year"></span> Seung yeon. All rights reserved.</div>
+          <div class="pf-footer__links" aria-label="Footer links">
+            <a href="#top">Home</a>
+            <a href="#about">About</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </footer>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    // Year
+    document.getElementById("pf-year").textContent = new Date().getFullYear();
+
+    // Scroll reveal (lightweight)
+    const revealEls = Array.from(document.querySelectorAll(".pf-reveal"));
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) entry.target.classList.add("is-visible");
+      });
+    }, { threshold: 0.12 });
+
+    revealEls.forEach((el) => io.observe(el));
+  </script>
+</body>
+</html>
