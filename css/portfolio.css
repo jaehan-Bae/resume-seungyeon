@@ -147,6 +147,9 @@
   border:1px solid var(--pf-soft);
   background:rgba(255,255,255,.62);
 }
+.pfp-section__desc {
+  margin-bottom: 20px;
+}
 
 /* info card */
 .pfp-info__list{
