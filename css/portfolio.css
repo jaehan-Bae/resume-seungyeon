@@ -26,9 +26,7 @@
   background:rgba(255,255,255,.62);
   font-size:13px;
   font-weight:900;
-}
-.pfp-back:hover{
-  background:rgba(255,255,255,.85);
+  transition: .3s;
 }
 
 /* chips */
@@ -240,7 +238,9 @@
   background:rgba(255,255,255,.62);
   font-size:13px;
   font-weight:900;
+  transition: .3s;
 }
+.pfp-back:hover,
 .pfp-footerNav__btn:hover{
   background:#000;
   color:#fff;
