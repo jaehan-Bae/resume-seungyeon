@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>이진솔루션 | 산업 설비 모니터링 대시보드</title>
+  <link rel="stylesheet" href="../css/style.css"/>
+  <link rel="stylesheet" href="../css/portfolio.css"/>
+</head>
+<body>
+  <main class="pfp-wrap">
+    <header class="pfp-header">
+      <div class="pfp-header__top">
+        <a href="../index.html#portfolio" class="pfp-back">← Portfolio</a>
+        <div class="pfp-chips" aria-label="Project tags">
+          <span class="pfp-chip">UI Redesign</span>
+          <span class="pfp-chip">Web App</span>
+          <span class="pfp-chip">Dashboard</span>
+          <span class="pfp-chip">Publishing</span>
+        </div>
+      </div>
+
+      <section class="pfp-hero" aria-label="Project hero">
+        <h1 class="pfp-title">Ejin Solution<br/>산업 설비 모니터링 대시보드 리디자인</h1>
+        <p class="pfp-lead">
+          전국 공장/라인/엣지PC 상태와 설비 파라미터 수집 현황을 한 화면에서 확인할 수 있는 모니터링 UI를 리디자인하고 퍼블리싱했습니다.<br/>
+          다수 카드/차트/지도의 정보 밀도를 재구성해 가독성에 집중했습니다.
+        </p>
+        <ul class="pfp-metaRow" aria-label="Project highlights">
+          <li class="pfp-metaPill">UI Redesign · Publishing</li>
+          <li class="pfp-metaPill">React · TypeScript</li>
+          <li class="pfp-metaPill">Dashboard · Monitoring</li>
+          <li class="pfp-metaPill">Screens 5</li>
+        </ul>
+      </section>
+    </header>
+
+    <section class="pfp-section pfp-info">
+      <h2 class="pfp-section__title">프로젝트 정보</h2>
+      <dl class="pfp-info__list">
+        <div class="pfp-info__row"><dt>프로젝트 성격</dt><dd>산업 설비/엣지PC 모니터링 웹 애플리케이션</dd></div>
+        <div class="pfp-info__row"><dt>담당 업무</dt><dd>UI 리디자인, 퍼블리싱(컴포넌트/레이아웃), 스타일 가이드 정리</dd></div>
+        <div class="pfp-info__row"><dt>기여도</dt><dd>리디자인 · 퍼블리싱 100%</dd></div>
+        <div class="pfp-info__row"><dt>사용 기술</dt><dd>React, TypeScript, HTML/CSS, JavaScript</dd></div>
+        <div class="pfp-info__row"><dt>주요 화면</dt><dd>엣지PC/설비 상세, 전국 공장 현황(지도), 전체 누적 대시보드, 알림 팝업, 에너지 관리 대시보드</dd></div>
+      </dl>
+    </section>
+
+    <section class="pfp-section pfp-desc">
+      <h2 class="pfp-section__title">프로젝트 설명</h2>
+      <div class="pfp-desc__card">
+        <p class="pfp-desc__text">
+          이진솔루션 모니터링 시스템은 전국 단위 공장/라인/설비와 엣지PC의 연결 상태, 그리고 설비 센서/파라미터 수집 현황을 통합적으로 관리하는 대시보드입니다.<br/><br/>
+
+          기존 화면은 정보가 많아 “어디를 먼저 봐야 하는지”가 불명확했기 때문에, 운영 흐름을 기준으로 화면 구조를 재정의했습니다.
+          상단에는 상태(온라인/오프라인/연결실패)와 수집량 같은 핵심 KPI를 우선 배치하고,
+          지도·카드·차트 영역은 우선순위에 따라 그룹핑하여 스캔만으로도 현황을 파악할 수 있게 구성했습니다.<br/><br/>
+
+          또한 카드형 레이아웃을 컴포넌트 단위로 정리해 React/TypeScript 기반 화면에서 재사용성을 확보했고,
+          알림(이벤트/임계치 초과) 팝업은 내용 가독성 및 대비를 강화해 즉시 조치가 가능하도록 개선했습니다.
+        </p>
+      </div>
+    </section>
+
+    <section class="pfp-section pfp-desc">
+      <h2 class="pfp-section__title">화면 구성</h2>
+      <div class="pfp-desc__card">
+        <ul class="pfp-desc__text" style="margin:0; padding-left: 18px;">
+          <li><b>엣지PC/설비 상세</b>: 설비 정보(메타), 연결된 태그 목록, 기간별 추이(라인차트), 수집량(바차트) 구성으로 운영자가 한 화면에서 상태·데이터를 확인</li>
+          <li><b>전국 공장 현황(지도)</b>: 지역별 공장 분포와 총 공장/라인/설비/태그 수를 직관적으로 표시, 상태 카드(온라인/오프라인/실패) 및 시스템 리소스 위젯 제공</li>
+          <li><b>전체 누적 대시보드</b>: 다수 엣지 장비의 실시간 파라미터 수집 현황을 카드 그리드로 제공, 상태(온라인/대기/실패/오프라인) 요약 및 페이지네이션</li>
+          <li><b>알림 팝업</b>: 임계치 초과(예: CPU usage) 이벤트를 리스트로 제공해 빠른 확인/대응이 가능하도록 시인성 강화</li>
+          <li><b>에너지 관리 대시보드</b>: 전기/가스/난방 소비량 및 온실가스 배출량을 KPI·게이지·스택차트로 제공, 공장 상세/랭킹/이벤트 현황 테이블 포함</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="pfp-section pfp-gallery">
+      <div class="pfp-section__head">
+        <h2 class="pfp-section__title">화면 미리보기</h2>
+        <div class="pfp-count" aria-label="Screen count">
+          <span class="pfpCountNow">1</span> / <span class="pfpCountTotal">5</span>
+        </div>
+      </div>
+
+      <p class="pfp-section__desc">
+        리디자인 결과 화면 일부입니다. (보안/내부 정보는 이미지 기준으로만 공개)
+      </p>
+
+      <div class="pfp-gallery__wheel"
+        data-gallery
+        data-base="../images/portfolio/ejin/"
+        data-custom="e1,e2,e3,e4,e5"
+        data-ext="png">
+        <ul class="pfp-gallery__list"></ul>
+      </div>
+    </section>
+
+    <nav class="pfp-footerNav" aria-label="Portfolio navigation">
+      <a class="pfp-footerNav__btn" href="../index.html#portfolio">← 목록으로</a>
+    </nav>
+  </main>
+
+  <script src="../js/portfolio.js"></script>
+</body>
+</html>
