@@ -53,6 +53,10 @@
   border-radius:var(--pf-radius-lg);
   padding:22px;
   overflow:hidden;
+  height: 44vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .pfp-hero::before{
   content:"";

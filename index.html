@@ -292,26 +292,32 @@
             <article class="pf-contact__pitch" aria-label="Call to action">
               <h3 class="pf-contact__headline">
                 함께 일할 프로젝트를 찾고 있어요.
-                <span class="pf-contact__sub">빠르게 파악하고, 깔끔하게 완성합니다.</span>
+                <span class="pf-contact__sub">
+                  디자인, 퍼블리싱, 콘텐츠까지 <br>
+                  웹 프로젝트를 하나의 흐름으로 만듭니다.
+                </span>
               </h3>
 
-              <ul class="pf-contact__points" aria-label="Key strengths">
-                <li class="pf-contact__point">
-                  <span class="pf-contact__icon" aria-hidden="true">✓</span>
-                  UI 리디자인 + 퍼블리싱까지 한 흐름으로 진행
-                </li>
-                <li class="pf-contact__point">
-                  <span class="pf-contact__icon" aria-hidden="true">✓</span>
-                  정보 위계/가독성 중심의 대시보드 · 내부 시스템 경험
-                </li>
-                <li class="pf-contact__point">
-                  <span class="pf-contact__icon" aria-hidden="true">✓</span>
-                  블로그 마케팅 관점의 카피/랜딩 구성 가능
-                </li>
-              </ul>
-
+              <div class="contact-img">
+                <img src="/images/mail-tiger.png" alt="">
+                <div>
+                  <ul class="pf-contact__points" aria-label="Key strengths">
+                    <li class="pf-contact__point">
+                      <span class="pf-contact__icon" aria-hidden="true">✓</span>
+                      UI 설계 + 웹페이지 <span class="orange">디자인</span>
+                    </li>
+                    <li class="pf-contact__point">
+                      <span class="pf-contact__icon" aria-hidden="true">✓</span>
+                      <div class="orange">반응형 퍼블리싱</div>+ 유지보수 가능한 구조 설계
+                    </li>
+                    <li class="pf-contact__point">
+                      <span class="pf-contact__icon" aria-hidden="true">✓</span>
+                      검색 노출 고려한 <div class="orange">블로그</div> 콘텐츠 제작
+                    </li>
+                  </ul>
+                </div>
+              </div>
               <div class="pf-contact__cta" aria-label="Quick actions">
-                <!-- TODO: 이메일 주소만 너 주소로 바꿔줘 -->
                 <a class="pf-contact__btn pf-contact__btn--primary"
                   href="mailto:YOUR_EMAIL@example.com?subject=[Portfolio] 프로젝트 문의&body=안녕하세요, 김승연 님.%0D%0A프로젝트 관련하여 문의드립니다.%0D%0A%0D%0A1) 프로젝트 유형(웹/대시보드/랜딩 등):%0D%0A2) 일정:%0D%0A3) 범위(디자인/퍼블리싱/둘 다):%0D%0A4) 참고 링크/자료:%0D%0A%0D%0A감사합니다.">
                   <i class="xi-mail" aria-hidden="true"></i>
@@ -325,11 +331,6 @@
                   카카오 오픈채팅
                 </a>
               </div>
-
-              <p class="pf-contact__footnote">
-                <span class="pf-contact__dot" aria-hidden="true"></span>
-                보통 <b>평일 24시간 이내</b> 답변드려요.
-              </p>
             </article>
 
             <!-- Right: Services + Links + Mini form -->
@@ -339,35 +340,40 @@
                 <div class="pf-contact__card">
                   <div class="pf-contact__cardTitle">Design</div>
                   <p class="pf-contact__cardDesc">
-                    UI 구조/레이아웃 설계, 리디자인, 컴포넌트 기준 정리
+                    UI 구조/레이아웃 설계, 리디자인, E북 디자인 작업
                   </p>
                   <div class="pf-contact__badges" aria-label="Design tags">
                     <span class="pf-contact__badge">Figma</span>
                     <span class="pf-contact__badge">UI System</span>
+                    <span class="pf-contact__badge">Photoshop</span>
+                    <span class="pf-contact__badge">Adobe XD</span>
                   </div>
                 </div>
 
-                <div class="pf-contact__card">
-                  <div class="pf-contact__cardTitle">Publishing</div>
-                  <p class="pf-contact__cardDesc">
-                    반응형 퍼블리싱, 유지보수 가능한 구조, 인터랙션 구현
-                  </p>
-                  <div class="pf-contact__badges" aria-label="Publishing tags">
-                    <span class="pf-contact__badge">HTML/CSS</span>
-                    <span class="pf-contact__badge">JS/jQuery</span>
+                  <div class="pf-contact__card">
+                    <div class="pf-contact__cardTitle">Publishing</div>
+                    <p class="pf-contact__cardDesc">
+                      반응형 퍼블리싱, 유지보수 가능한 구조
+                    </p>
+                    <div class="pf-contact__badges" aria-label="Publishing tags">
+                      <span class="pf-contact__badge">HTML</span>
+                      <span class="pf-contact__badge">CSS</span>
+                      <span class="pf-contact__badge">jQuery</span>
+                      <span class="pf-contact__badge">JS</span>
+                    </div>
                   </div>
-                </div>
-
-                <div class="pf-contact__card">
-                  <div class="pf-contact__cardTitle">Blog Marketing</div>
-                  <p class="pf-contact__cardDesc">
-                    상업 글쓰기/랜딩 카피, 섹션 구성, CTA 설계
-                  </p>
-                  <div class="pf-contact__badges" aria-label="Marketing tags">
-                    <span class="pf-contact__badge">Copy</span>
-                    <span class="pf-contact__badge">Structure</span>
+  
+                  <div class="pf-contact__card">
+                    <div class="pf-contact__cardTitle">Blog Marketing</div>
+                    <p class="pf-contact__cardDesc">
+                      상업 글쓰기 + 스토리텔링 콘텐츠 출판 경험
+                    </p>
+                    <div class="pf-contact__badges" aria-label="Marketing tags">
+                      <span class="pf-contact__badge">AI</span>
+                      <span class="pf-contact__badge">Copy</span>
+                      <span class="pf-contact__badge">Structure</span>
+                    </div>
                   </div>
-                </div>
               </div>
 
               <!-- Contact links -->
@@ -384,49 +390,7 @@
                   <i class="xi-external-link" aria-hidden="true"></i>
                 </a>
 
-                <a class="pf-contact__link" href="mailto:YOUR_EMAIL@example.com">
-                  <span class="pf-contact__linkLabel">Email</span>
-                  <span class="pf-contact__linkValue">YOUR_EMAIL@example.com</span>
-                  <i class="xi-mail" aria-hidden="true"></i>
-                </a>
               </div>
-
-              <!-- Mini inquiry UI (mailto fallback) -->
-              <form class="pf-contact__form" aria-label="Quick inquiry form"
-                    onsubmit="event.preventDefault(); window.location.href = `mailto:YOUR_EMAIL@example.com?subject=${encodeURIComponent('[Portfolio] 빠른 문의')}&&body=${encodeURIComponent(
-                      '안녕하세요, 김승연 님.\n\n' +
-                      '이름: ' + (document.getElementById('pf-name')?.value || '') + '\n' +
-                      '연락처/이메일: ' + (document.getElementById('pf-reply')?.value || '') + '\n' +
-                      '문의 내용:\n' + (document.getElementById('pf-msg')?.value || '') + '\n\n' +
-                      '감사합니다.'
-                    )}`;">
-                <div class="pf-contact__formHead">
-                  <div class="pf-contact__formTitle">빠른 문의</div>
-                  <div class="pf-contact__formNote">메일로 전송됩니다</div>
-                </div>
-
-                <div class="pf-contact__fields">
-                  <label class="pf-contact__field">
-                    <span class="pf-contact__fieldLabel">이름</span>
-                    <input id="pf-name" type="text" placeholder="성함" autocomplete="name">
-                  </label>
-
-                  <label class="pf-contact__field">
-                    <span class="pf-contact__fieldLabel">연락처 / 이메일</span>
-                    <input id="pf-reply" type="text" placeholder="회신 받을 주소" autocomplete="email">
-                  </label>
-
-                  <label class="pf-contact__field pf-contact__field--full">
-                    <span class="pf-contact__fieldLabel">문의 내용</span>
-                    <textarea id="pf-msg" rows="4" placeholder="프로젝트 유형, 일정, 범위를 적어주시면 더 빠르게 답변드려요."></textarea>
-                  </label>
-                </div>
-
-                <button class="pf-contact__submit" type="submit">
-                  <i class="xi-send" aria-hidden="true"></i>
-                  Send
-                </button>
-              </form>
             </aside>
           </div>
         </section>
