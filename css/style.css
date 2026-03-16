@@ -164,7 +164,7 @@ button{
   display:grid;
   grid-template-columns:1fr 1fr;
   height:100%;
-  gap:60px;
+  gap:100px;
 }
 .pf-words{
   display:flex;
