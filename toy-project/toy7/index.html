@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Hover navigation effect that separates up and down</title>
+  <style>
+    /* Google Web Font */
+    @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+    /* Fontawesome 4.7 */
+    @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+    /* Default Css */
+    body {
+      font-family: 'Raleway', sans-serif;
+      line-height: 1.5em;
+      font-weight: 300;
+      font-size: 15px;
+      background-color: #222;
+      color: #fff;
+    }
+    a {
+      color: #222;
+      text-decoration: none;
+    }
+
+    /* Style.css */
+    .items {
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .item {
+      width: 300px;
+      height: 200px;
+      display: inline-block;
+      position: relative;
+      top: 0;
+      margin: 0 5px;
+    }
+    .front,
+    .back {
+      position: absolute;
+      transition: .3s;
+      top: 0;
+    }
+    .front {
+      background-color: #333;
+      text-align: center;
+      height: inherit;
+      z-index: 1;
+      width: 100%;
+    }
+    .item:hover .front img {
+      animation: ani 1s linear infinite;
+    }
+    .front h2 {
+      margin-top: 0px;
+    }
+    .back {
+      background-color: #fff;
+      color: #000;
+      height: inherit;
+      text-align: center;
+      padding: 20px;
+      box-sizing: border-box;
+      opacity: 0;
+    }
+    .back p {
+      color: #333;
+    }
+    .back a {
+      background-color: dodgerblue;
+      color: #fff;
+      padding: 5px 15px;
+      border-radius: 20px;
+      font-size: 13px;
+    }
+    .back a:hover {
+      background-color: #000;
+    }
+    .item:hover .front {
+      top: -50%;
+    }
+    .item:hover .back {
+      top: 50%;
+      opacity: 1;
+    }
+
+    @keyframes ani {
+      0%,
+      100% {
+        transform: scale(0.9);
+      }
+      50% {
+        transform: scale(1.2);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="items">
+    <div class="item">
+      <div class="front">
+        <img src="images/space-01.png" alt="">
+        <h2>Mars</h2>
+      </div>
+      <div class="back">
+        <p>
+          사용한 CSS 속성: hover, position, z-index, overflow, animation(transform: scale)
+        </p>
+        <a href="#none">Read More</a>
+      </div>
+    </div>
+    <div class="item">
+      <div class="front">
+        <img src="images/space-01.png" alt="">
+        <h2>How to make this</h2>
+      </div>
+      <div class="back">
+        <p>
+          구현방법: 3개의 item으로 분리, inline-block으로 연결. 상하를 front와 back으로 나눈 뒤, top:0로 기본 설정 한뒤 hover 시에 top:50%, front:-50%로 위로 당겨지며 숨겨진 back이 드러나게 함.
+        </p>
+
+        <a href="#none">Read More</a>
+      </div>
+    </div>
+    <div class="item">
+      <div class="front">
+        <img src="images/space-01.png" alt="">
+        <h2>Saturnus</h2>
+      </div>
+      <div class="back">
+        <p>
+          토성은 태양으로부터 여섯 번째에 있는 태양계의 행성으로, 진성(鎭星)으로도 불렀다. 토성은 태양계 내의 행성 중 목성에 이어 두 번째로 크며, 지름은 약 12만 킬로미터이다.
+        </p>
+        <a href="#none">Read More</a>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

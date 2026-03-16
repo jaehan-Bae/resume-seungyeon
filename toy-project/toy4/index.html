@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <style>
+    /* Google Web Font */
+    @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+    
+    /* Fontawesome 4.7 */
+    @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+    
+    /* Default Css */
+    body {
+      font-family: 'Raleway', sans-serif;
+      color: #fff;
+      line-height: 1.5em;
+      font-weight: 300;
+      overflow-y: hidden;
+      overflow-x: hidden;
+    }
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+    /* Style.css */
+    input[name=tabmenu] {
+      display: none;
+    }
+    .tabs {
+      overflow: hidden;
+      position: relative;
+      height: 100vh;
+    }
+    .items {
+      height: 100vh;
+      width: 400%;
+      transition: .5s;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .subtitle {
+      height: 100vh;
+      float: left;
+      width: 25%;
+      box-sizing: border-box;
+      position: relative;
+    }
+    .subtitle:nth-child(1) {
+      background: url(images/photo04.jpg) no-repeat center center /cover fixed;
+    }
+    .subtitle:nth-child(2) {
+      background: url(images/photo01.jpg) no-repeat center center /cover fixed;
+    }
+    .subtitle:nth-child(3) {
+      background: url(images/photo02.jpg) no-repeat center center /cover fixed;
+    }
+    .subtitle:nth-child(4) {
+      background: url(images/photo03.jpg) no-repeat center center /cover fixed;
+    }
+    .subtitle:nth-child(1):before,
+    .subtitle:nth-child(2):before,
+    .subtitle:nth-child(3):before,
+    .subtitle:nth-child(4):before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+    .subtitle:nth-child(1):before {
+      background: linear-gradient(135deg, rgba(18, 42, 12, 0.589), transparent);
+    }
+    .subtitle:nth-child(2):before {
+      background: linear-gradient(135deg, rgba(255, 192, 203, 0.464), transparent);
+    }
+    .subtitle:nth-child(3):before {
+      background: linear-gradient(135deg, rgba(65, 105, 225, 0.589), transparent);
+    }
+    .subtitle:nth-child(4):before {
+      background: linear-gradient(135deg, rgba(255, 217, 0, 0.442), transparent);
+    }
+    .subtitle h1
+    {
+      font-weight: normal;
+      position: relative;
+      transform: translateY(-200px);
+      opacity: 0;
+      transition: .5s;
+      transition-delay: .5s;
+    }
+    .subtitle h1 {
+      font-size: 150px;
+      text-align: center;
+    }
+    .title {
+      width: 50%;
+      background-color: #ffffff9c;
+      color: rgb(1, 55, 1);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      padding: 40px;
+    }
+    .btn {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      background-color: #00000065;
+    }
+    .btn label {
+      display: inline-block;
+      cursor: pointer;
+      color: #fff;
+      margin: 0 15px;
+    }
+    input[id=tab2]:checked ~ .tabs .items {
+      left: -100%;
+    }
+    input[id=tab3]:checked ~ .tabs .items {
+      left: -200%;
+    }
+    input[id=tab4]:checked ~ .tabs .items {
+      left: -300%;
+    }
+    input[id=tab1]:checked ~ .btn label[for=tab1],
+    input[id=tab2]:checked ~ .btn label[for=tab2],
+    input[id=tab3]:checked ~ .btn label[for=tab3],
+    input[id=tab4]:checked ~ .btn label[for=tab4] {
+      color: crimson;
+    }
+    input[id=tab2]:checked ~ .tabs .subtitle:nth-child(2) h1,
+    input[id=tab3]:checked ~ .tabs .subtitle:nth-child(3) h1, 
+    input[id=tab4]:checked ~ .tabs .subtitle:nth-child(4) h1 
+    {
+      transform: translateY(300px);
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+ <div class="tab-inner">
+  <input type="radio" name="tabmenu" id="tab1" checked>
+  <input type="radio" name="tabmenu" id="tab2">
+  <input type="radio" name="tabmenu" id="tab3">
+  <input type="radio" name="tabmenu" id="tab4">
+  <div class="tabs">
+    <div class="items">
+      <div class="subtitle">
+        <div class="title">
+          <h2>💙Blurring in addition to hovering menus💙</h2>
+          <p>
+            주요 Css속성: overflow, position, gradient, input, nth-child, opacity<br>
+            ☑️아래쪽 Tab에 마우스를 클릭해주세요.
+          </p>
+          <p>
+            4개의 탭을 품고있는 items의 너비를 400%로 설정하고, items 밑의 div를 float으로 연결, 너비를 25%씩 차지하게 만든 뒤 overflow: hidden 으로 3개의 탭을 숨김. subtitle:nth-child 에 백그라운드 이미지로 각기 다른 사진을 저장. input의 id를 연결해 checked되면 화면 위치를 left 0에서 -100~,-300%까지 이동시켜 버튼을 누르면 각기 탭으로 이동하게 만듦. before 속성으로 각 사진에 linear-gradient를 넣어줌. 탭을 클릭할 때마다 h1이 translateY(-200px)에서 translateY(300px)로 위에서 아래로 내려온 애니메이션 완성.
+          </p>
+        </div>
+      </div>
+      <div class="subtitle">
+        <h1>Sightseeing</h1>
+      </div>
+      <div class="subtitle">
+        <h1>Relax</h1>
+      </div>
+      <div class="subtitle">
+        <h1>Activity</h1>
+      </div>
+    </div>
+  </div>
+  <div class="btn">
+    <label for="tab1">How to make</label>
+    <label for="tab2">Sightseeing</label>
+    <label for="tab3">Relax</label>
+    <label for="tab4">Activity</label>
+  </div>
+ </div>
+</body>
+</html>

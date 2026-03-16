@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>before, after attr navigation</title>
+  <style>
+    /* Google Web Font */
+    @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+    /* Fontawesome 4.7 */
+    @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+    /* Default Css */
+    body {
+      font-family: 'Raleway', sans-serif;
+      color: #222;
+      line-height: 1.5em;
+      font-weight: 300;
+      background: linear-gradient(180deg, #DCE35B, #45B649);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    a {
+      color: #222;
+      text-decoration: none;
+    }
+    /* Style.css */
+    .container {
+      position: relative;
+      display: flex;
+      justify-content: center;
+    }
+    .title {
+      margin-top: -100px;
+      text-align: center;
+      position: absolute;
+      top: -200px;
+    }
+    .title h1 {
+      font-weight: normal;
+    }
+    .title span {
+      color: rgb(132, 109, 109);
+      display: block;
+      margin-top: 10px;
+    }
+    .gnb {
+      background-color: #fff;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px #1010102b;
+      padding-bottom: 10px;
+    }
+    .gnb a {
+      width: 80px;
+      display: inline-block;
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .gnb a:before,
+    .gnb a:after {
+      position: absolute;
+      content: attr(data-link);
+      width: 100%;
+      transition: .3s;
+    }
+    .gnb a:before {
+      top: 0;
+      left: 0;
+    }
+    .gnb a:after {
+      top: 100%;
+      left: 0;
+      color: #45b649;
+    }
+    .gnb a:hover:before {
+      top: -100%;
+    }
+    .gnb a:hover:after {
+      top: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="title">
+      <h1>💛Attr data-link hover navigation💚</h1>
+      <p>
+        주요 Css속성: hover, position, before&after, hover, attr(data-link),overflow <br>
+        <span>☑️아래 ui에 마우스를 태그해주세요</span>
+      </p>
+    </div>
+    <div class="gnb">
+      <a href="#none" data-link="메일"></a>
+      <a href="#none" data-link="카페"></a>
+      <a href="#none" data-link="블로그"></a>
+      <a href="#none" data-link="지식IN"></a>
+      <a href="#none" data-link="쇼핑"></a>
+      <a href="#none" data-link="Pay"></a>
+      <a href="#none" data-link="사전"></a>
+      <a href="#none" data-link="뉴스"></a>
+    </div>
+  </div>
+</body>
+
+</html>

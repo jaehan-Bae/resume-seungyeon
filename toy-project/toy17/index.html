@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Virtual Class_Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <div class="left">
+    <div class="title">
+      <h1>💙Form Virtual Class_Login💙</h1>
+      <p>
+        주요 Css속성: input, label, 인접선택자, 속성선택자, 가상클래스 :checked :active :before <br>
+        ☑️오른쪽 ui 마우스 태그, 클릭
+      </p>
+      <p>
+        form요소 사용으로, 일직선으로 죽 배치하되 체크와 비밀번호 찾기 부분만 float으로 좌우 배치하고 부모요소 높이값 잃은 것에 overflow:hidden 설정해주었음.<br>
+        input의 type=email/password를 focus 했을 때 placeholder의 투명도를 0으로 설정해 보이지 않게 함. visibility: hidden 으로 완벽하게 사라지게 설정. 마우스를 올렸을 때 boder와 그림자를 설정해 색상 변경하여 가상클래스 로그인 폼 완성.
+      </p>
+    </div>
+  </div>
+  <div class="right">
+    <form class="login">
+    <span>Email</span>
+    <input type="email" placeholder="email">
+    <span>Password</span>
+    <input type="password" placeholder="Password">
+    <p>
+      <label>
+        <input type="checkbox"> Keep me logged in
+      </label>
+      <a href="#none">forget</a>
+    </p>
+    <button>Log in</button>
+    </form>
+  </div>
+</div>
+</body>
+</html>

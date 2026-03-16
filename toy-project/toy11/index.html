@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <style>
+    /* Google Web Font */
+    @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+    /* Fontawesome 4.7 */
+    @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+    /* Default Css */
+    body {
+      font-family: 'Raleway', sans-serif;
+      color: #222;
+      line-height: 1.5em;
+      font-weight: 300;
+    }
+
+    a {
+      color: #222;
+      text-decoration: none;
+    }
+
+    /* Style.css */
+    .container {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container>div {
+      float: left;
+      width: 50%;
+    }
+
+    .left,
+    .right {
+      display: flex;
+      justify-content: center;
+    }
+
+    .title {
+      width: 70%;
+    }
+
+    .title h1 {
+      font-weight: normal;
+      line-height: 40px;
+      text-align: center;
+    }
+
+    .title p {
+      background-color: rgba(135, 207, 235, 0.459);
+      padding: 20px;
+      font-size: 18px;
+      line-height: 40px;
+    }
+
+    .right {
+      position: relative;
+      height: 100%;
+      background-color: rgba(196, 217, 218, 0.387);
+      align-items: center;
+    }
+
+    .skill-progress {
+      width: 500px;
+      padding: 20px;
+      background-color: #333;
+      color: #fff;
+      box-shadow: 0 20px 50px #22222235;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .skill-progress h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-weight: normal;
+    }
+
+    .item p {
+      overflow: hidden;
+      margin-bottom: 5px;
+    }
+
+    .item p span:nth-child(1) {
+      float: left;
+    }
+
+    .item p span:nth-child(2) {
+      float: right;
+    }
+
+    .progress {
+      border: 1px solid #6cd4c4;
+      padding: 5px;
+      border-radius: 3px;
+    }
+
+    .progress-level {
+      height: 10px;
+      background: linear-gradient(to right, crimson, gold);
+      animation: ani 1s;
+      animation-fill-mode: both;
+    }
+
+    @keyframes ani {
+      0% {
+        width: 0;
+      }
+    }
+
+    .skill-progress .item:nth-of-type(1) .progress-level {
+      animation-delay: 0s;
+    }
+
+    .skill-progress .item:nth-of-type(2) .progress-level {
+      animation-delay: 0.2s;
+    }
+
+    .skill-progress .item:nth-of-type(3) .progress-level {
+      animation-delay: 0.4s;
+    }
+
+    .skill-progress .item:nth-of-type(4) .progress-level {
+      animation-delay: 0.6s;
+    }
+
+    .skill-progress .item:nth-of-type(5) .progress-level {
+      animation-delay: 0.8s;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="left">
+      <div class="title">
+        <h1>💙Order Check Virtual Class💙</h1>
+        <p>
+          input, label, 인접선택자, 형제선택자, 속성선택자 :checked, overflow, posotion
+        </p>
+        <p>
+          progress를 5개의 아이템으로 나눔. float 왼,오른쪽 배치. 퍼센테이지 바는 animation을 이용하여 width:0 부터 gradient를 사용해 to right로 오른쪽으로 이동. 각기의 애니메이션이 차례대로 움직여야하기 때문에 nth-of-type을 통해 0.2 간격으로 딜레이 조정을 했음. animation-fill-mode: both;로 애니메이션이 자연스럽게 이어지게 연결하여 퍼센테이지 바 완성.
+        </p>
+      </div>
+    </div>
+    <div class="right">
+      <div class="skill-progress">
+        <h1>SOFTWARE SKILLS</h1>
+        <div class="item">
+          <p>
+            <span>HTML5</span>
+            <span>90%</span>
+          </p>
+          <div class="progress">
+            <div class="progress-level" style="width: 90%;"></div>
+          </div>
+        </div>
+        <div class="item">
+          <p>
+            <span>CSS3</span>
+            <span>80%</span>
+          </p>
+          <div class="progress">
+            <div class="progress-level" style="width: 80%;"></div>
+          </div>
+        </div>
+        <div class="item">
+          <p>
+            <span>jQuery</span>
+            <span>65%</span>
+          </p>
+          <div class="progress">
+            <div class="progress-level" style="width: 65%;"></div>
+          </div>
+        </div>
+        <div class="item">
+          <p>
+            <span>JavaScript</span>
+            <span>60%</span>
+          </p>
+          <div class="progress">
+            <div class="progress-level" style="width: 70%;"></div>
+          </div>
+        </div>
+        <div class="item">
+          <p>
+            <span>Photoshop</span>
+            <span>70%</span>
+          </p>
+          <div class="progress">
+            <div class="progress-level" style="width: 70%;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Testimonial Tab-slider</title>
+  <style>
+    /* Google Web Font */
+    @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+    /* Fontawesome 4.7 */
+    @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+    /* Default Css */
+    body {
+      font-family: 'Raleway', sans-serif;
+      color: #222;
+      line-height: 1.5em;
+      font-weight: 300;
+    }
+    a {
+      color: #222;
+      text-decoration: none;
+    }
+    /* Style.css */
+    .container {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .container>div {
+      float: left;
+      width: 50%;
+    }
+    .left,
+    .right {
+      display: flex;
+      justify-content: center;
+    }
+    .title {
+      width: 70%;
+    }
+    .title h1 {
+      font-weight: normal;
+      line-height: 40px;
+      text-align: center;
+    }
+    .title p {
+      background-color: rgba(135, 207, 235, 0.459);
+      padding: 20px;
+      font-size: 18px;
+      line-height: 40px;
+    }
+    .right {
+      position: relative;
+      height: 100%;
+      background-color: rgba(196, 217, 218, 0.387);
+      align-items: center;
+    }
+    .tab-inner {
+      height: 500px;
+    }
+    .tab-inner h1 {
+      text-align: center;
+      font-size: 40px;
+      font-weight: normal;
+    }
+    input[name=tabmenu] {
+      display: none;
+    }
+    .tabs {
+      width: 800px;
+      height: 400px;
+      position: relative;
+      overflow: hidden;
+      margin: auto;
+    }
+    .items {
+      width: 2400px;
+      height: 400px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: .5s;
+    }
+    .items div {
+      width: 800px;
+      height: 400px;
+      float: left;
+      box-sizing: border-box;
+      text-align: center;
+      padding: 50px;
+    }
+    .btn {
+      text-align: center;
+    }
+    .btn label {
+      width: 10px;
+      height: 10px;
+      background-color: lightgray;
+      display: inline-block;
+      cursor: pointer;
+    }
+    .items div img {
+      width: 120px;
+      border-radius: 50%;
+    }
+    .items div p b {
+      display: block;
+    }
+    .items div p span {
+      color: orange;
+    }
+    input[id=tab1]:checked ~ .tabs .items {
+      left: 0;
+    }
+    input[id=tab2]:checked ~ .tabs .items {
+      left: -800px;
+    }
+    input[id=tab3]:checked ~ .tabs .items {
+      left: -1600px;
+    }
+    input[id=tab1]:checked ~ .btn label[for=tab1],
+    input[id=tab2]:checked ~ .btn label[for=tab2],
+    input[id=tab3]:checked ~ .btn label[for=tab3] {
+      background-color: crimson;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+
+<body>
+<div class="container">
+  <div class="left">
+    <div class="title">
+      <h1>💙Testimonial Tab-slider💙</h1>
+      <p>
+        주요 Css속성: input, label, 인접선택자, 형제선택자, 속성선택자 :checked, overflow, posotion <br>
+        ☑️오른쪽 ui 탭 버튼 클릭
+      </p>
+      <p>
+        3개의 div(탭)를 감싸는 items에 너비 2400px 설정. items의 부모요소인 tabs에 부모자식 관계 설정 후 overflow: hidden으로 넘치는 부분 (부모요소의 너비값 800px) 제외한 뒤 자르면 탭 하나씩 송출됨. input[name=tabmenu]는 보이지 않게 설정 후 input의 id값이 같은 label의 for를 연결해 checked 되면 left로 -800px씩 이동, 라벨의 버튼을 클릭하면 붉은색으로 변하는 슬라이드 완성
+      </p>
+    </div>
+  </div>
+  <div class="right">
+    <div class="tab-inner">
+      <input type="radio" name="tabmenu" id="tab1" checked>
+      <input type="radio" name="tabmenu" id="tab2">
+      <input type="radio" name="tabmenu" id="tab3">
+      <h1>About us</h1>
+      <div class="tabs">
+        <div class="items">
+          <div>
+            <img src="image/image1.jpg" alt="">
+            <p>
+              As we all know, it’s easy for marketers to brag about how great their product or service is. Writing
+              compelling copy, shooting enticing photos, or even producing glamorous videos are all tactics we use to draw
+              attention to our brands. While all of these strategies can be successful, there really is no better way to
+              gain trust and prove the validity of your brand like customer testimonials.
+            </p>
+            <p>
+              <b>SeungYeon</b>
+              Media Analyst at <span>ZenDesk</span>
+            </p>
+          </div>
+          <div>
+            <img src="image/image2.jpg" alt="">
+            <p>
+              ZenDesk’s testimonial page is beautifully laid out AND functional, with a silent customer video playing on loop to serve as the banner, a menu to filter testimonials by location, company size, industry, and use case, and lastly thumbnails linking to the full customer stories for a variety of big-name brands. This is a clean and concise way to showcase their happy customers.
+            </p>
+            <p>
+              <b>Bree</b>
+              Graphic Designer at <span>ChowNow</span>
+            </p>
+          </div>
+          <div>
+            <img src="image/image3.jpg" alt="">
+            <p>
+              As we all know, it’s easy for marketers to brag about how great their product or service is. Writing compelling copy, shooting enticing photos, or even producing glamorous videos are all tactics we use to draw attention to our brands. While all of these strategies can be successful, there really is no better way to gain trust and prove the validity of your brand like customer testimonials.
+            </p>
+            <p>
+              <b>KIM</b>
+              Developer at Startup
+              <span>Institute</span>
+            </p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="btn">
+        <label for="tab1"></label>
+        <label for="tab2"></label>
+        <label for="tab3"></label>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+
+</html>

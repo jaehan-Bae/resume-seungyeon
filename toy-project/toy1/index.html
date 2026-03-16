@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>App ui Layer 3D Hover Animation</title>
+  <style>
+    /* Google Web Font */
+    @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+    
+    /* Fontawesome 4.7 */
+    @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+    
+    /* Default Css */
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Raleway', sans-serif;
+      color: #222;
+      line-height: 1.5em;
+      font-weight: 300;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    a {
+      color: #222;
+      text-decoration: none;
+    }
+    /* Style.css */
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center; 
+    }
+    .container > div {
+      float: left;
+    }
+    .title {
+      width: 30%;
+      height: 640px;
+    }
+    .title h1 {
+      font-size: 36px;
+      line-height: 60px;
+      text-align: center;
+      font-weight: normal;
+    }
+    .title p {
+      background-color: rgba(135, 207, 235, 0.459);
+      padding: 20px;
+      font-size: 18px;
+      line-height: 40px;
+    }
+    .app {
+      width: 50%;
+    }
+    .app-ui {
+      width: 340px;
+      height: 640px;
+      transform: rotate(-30deg) skewX(20deg) scale(.9);
+      position: relative;
+      box-shadow: 0 0 20px rgba(0, 0, 0, .3);
+      transition: .5s;
+      background-color: #eee;
+      margin-left: 300px;
+    }
+    .app-ui:hover {
+      box-shadow: -50px 100px 60px rgba(0, 0, 0, .3);
+    }
+    .app-ui img {
+      position: absolute;
+      transition: .5s;
+    }
+    .app-ui:hover img:nth-child(1) {
+      transform: translate(40px, -40px);
+      opacity: 0.2;
+    }
+    .app-ui:hover img:nth-child(2) {
+      transform: translate(80px, -80px);
+      opacity: 0.4;
+    }
+    .app-ui:hover img:nth-child(3) {
+      transform: translate(120px, -120px);
+      opacity: 0.6;
+    }
+    .app-ui:hover img:nth-child(4) {
+      transform: translate(160px, -160px);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="title">
+      <h1>💙App ui Layer  <br>3D Hover Animation💙</h1>
+    <p>
+      주요 Css속성: hover, position, opacity, transform <br>
+      ☑️오른쪽 ui에 마우스를 태그해주세요.
+    </p>
+    <p>
+      relative/absolute 부모-자식관계로 이미지를 합친 뒤 hover하면 transform: translate 속성을 활용해 x축과 y축의 간격을 40px씩 벌리고, opacity를 활용해 투명도를 조절하여 여러 계층이 쌓인 것 처럼 보이는 3D UI 애니메이션 제작
+    </p>
+    </div>
+    <div class="app">
+      <div class="app-ui">
+        <img src="images/app-ui-01.jpg" alt="">
+        <img src="images/app-ui-02.jpg" alt="">
+        <img src="images/app-ui-03.jpg" alt="">
+        <img src="images/app-ui-04.jpg" alt="">
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+/* Fontawesome 4.7 */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+/* XEION CDN */
+@import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+
+/* Default Css */
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  margin: 0;
+  color: #222;
+  font-size: 20px;
+}
+a {
+  text-decoration: none;
+  color: Gainsboro;
+}
+
+/* Style.css */
+.faq {
+  height: 100vh;
+  background-color: #ffeb60;
+}
+.faq-inner {
+  width: 750px;
+  margin: auto;
+}
+.faq-inner h1 {
+  text-align: center;
+  margin-top: 0;
+}
+.accordion-item {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 20px;
+  box-shadow: 0 0 25px #0000002b;
+  margin-bottom: 17px;
+}
+.accordion-item .title {
+  font-weight: bold;
+  cursor: pointer;
+}
+.accordion-item .title:after {
+  content: '\f107';
+  font-family: fontawesome;
+  float: right;
+  margin-top: 4px;
+}
+.accordion-item .title.active:after {
+  transform: rotateX(180deg);
+}
+.accordion-item .title.active {
+  padding-bottom: 15px;
+}
+.accordion-item .content {
+  border-top: 1px solid #000;
+  font-size: 16px;
+  padding-top: 16px;
+  display: none;
+}
+.content span {
+  display: block;
+  margin-bottom: 10px;
+  color: #444;
+}

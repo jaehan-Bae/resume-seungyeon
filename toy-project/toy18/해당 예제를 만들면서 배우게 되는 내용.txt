@@ -1,0 +1,8 @@
+■ 해당 예제를 만들면서 배우게 되는 내용
+
+1) 플렉스(Flex) 배치
+2) CSS 함수 : calc
+3) 폼 요소 중 input에 관련한 가상클래스(:focus, ::placeholder) 및 속성선택자
+4) 제이쿼리(jQuery) 메서드 : addClass, removeClass, css, focus, blur
+5) CSS Easing
+6) XEicon 가상클래스 :before, :after 사용법

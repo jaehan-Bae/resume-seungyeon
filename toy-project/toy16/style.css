@@ -1,0 +1,99 @@
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* XEION CDN */
+@import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+* {
+  font-family: 'Raleway', sans-serif;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  line-height: 1.5em;
+  margin: 0;
+  font-weight: 300;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+}
+
+/* Style.css */
+.container {
+  display: flex;
+}
+.square {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  margin: 50px;
+}
+.square span {
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  border: 1px solid #fff;
+  border-radius: 40% 60% 65% 35% / 40% 45% 30% 55%;
+  transition: .5s;
+}
+.square:nth-child(1):hover span,
+.square:nth-child(2):hover span,
+.square:nth-child(3):hover span {
+  border: none;
+}
+.square:nth-child(1):hover span {
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+}
+.square:nth-child(2):hover span {
+  background-image: linear-gradient(to top, #c79081 0%, #dfa579 100%);
+}
+.square:nth-child(3):hover span {
+  background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+}
+.square span:nth-child(1) {
+  animation: circle 6s linear infinite;
+}
+.square span:nth-child(2) {
+  animation: circle 4s linear infinite;
+  animation-direction: reverse;
+}
+.square span:nth-child(3) {
+  animation: circle 10s linear infinite;
+}
+.square:hover span:nth-child(1) {
+  opacity: 0.3;
+}
+.square:hover span:nth-child(1) {
+  opacity: 0.5;
+}
+.square:hover span:nth-child(1) {
+  opacity: 0.8;
+}
+.square div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  text-align: center;
+  color: #fff;
+}
+.square div a {
+  color: #fff;
+  border-radius: 30% 60% 70% 40% / 20% 40% 65% 70%;
+  border: 1px solid #fff;
+  padding: 8px;
+}
+
+@keyframes circle {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

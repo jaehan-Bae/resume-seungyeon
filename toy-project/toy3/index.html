@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Blurring in addition to hovering menus</title>
+  <style>
+    /* Google Web Font */
+    @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+    
+    /* Fontawesome 4.7 */
+    @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+    
+    /* Default Css */
+    body {
+      font-family: 'Raleway', sans-serif;
+      color: #222;
+      line-height: 1.5em;
+      font-weight: 300;
+      margin: 0;
+    }
+    a {
+      color: #222;
+      text-decoration: none;
+    }
+    /* Style.css */
+    .container {
+      height: 100vh;
+      border: 1px solid #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .container > div {
+      float: left;
+      width: 50%;
+      position: relative;
+    }
+    .left {
+      display: flex;
+      justify-content: center;
+    }
+    .title {
+      width: 70%;
+    }
+    .title h1 {
+      font-weight: normal;
+      line-height: 40px;
+    }
+    .title p {
+      background-color: rgba(135, 207, 235, 0.459);
+      padding: 20px;
+      font-size: 18px;
+      line-height: 40px;
+    }
+    .right {
+      position: relative;
+      height: 100%;
+      background-color: royalblue;
+    }
+    .gnb {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 50px;
+    }
+    .gnb a {
+      display: block;
+      font-size: 40px;
+      margin: 30px 0;
+      color: #fff;
+      transition: .5s;
+    }
+    .gnb:hover a {
+      opacity: .3;
+    }
+    .gnb a:hover {
+      opacity: 1;
+    }
+    .gnb a:before {
+      content: '\f105';
+      font-family: fontawesome;
+      margin-right: 10px;
+      opacity: 0;
+    }
+    .gnb a:hover:before {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left">
+      <div class="title">
+        <h1>💙Blurring in addition to hovering menus💙</h1>
+        <p>
+          주요 Css속성: hover, display, before, transition <br>
+          ☑️오른쪽 ui에 마우스를 태그해주세요.
+        </p>
+        <p>
+          gnb에 hover했을 때 a를 opacity 0.3(특정 a제외 나머지), gnb a에 hover했을 때 opacity 1로 설정하여 특정한 gnb를 강조
+        </p>
+      </div>
+    </div>
+    <div class="right">
+      <div class="gnb">
+        <a href="#none">New Arrivals</a>
+        <a href="#none">Summer Collection</a>
+        <a href="#none">Winter Collection</a>
+        <a href="#none">Special Offers</a>
+        <a href="#none">Trends</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery Fade In Out Modal</title>
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="left">
+      <div class="title">
+        <h1>💙jQuery Fade In Out Modal💙</h1>
+        <p>
+          주요 Css속성: position, transform <br>
+          ☑️오른쪽 ui를 클릭해주세요.
+        </p>
+        <p>
+          구현방법: 버튼을 클릭하면 modal이 fadeIn이 되며 송출되고, 닫힘 버튼을 누르면 modal이 fadeOut되는 jQuery 모달창
+        </p>
+      </div>
+    </div>
+    <div class="right">
+      <a class="modal-notice" href="#none">
+        <span>Please Click me!</span><br>(jQuery Modal)
+      </a>
+    </div>
+  </div>
+
+  <div class="modal">
+    <div class="modal-content">
+      <a href="#none" class="btn-close">X</a>
+      <h2>Welcome to My page!</h2>
+      <img src="group.png" alt="">
+      <p>
+        Welcome to my website! As an aspiring web publisher, I've studied HTML, CSS, jQuery, and JavaScript, and have
+        created a portfolio of web and app projects where I've applied what I've learned.
+      </p>
+      <a href="https://beom31.tistory.com/" target="_blank" class="btn-guide">Open guide</a>
+    </div>
+  </div>
+
+  <script>
+    $(function () {
+      $('.modal-notice').click(function () {
+        $('.modal').fadeIn();
+      });
+      $('.btn-close').click(function () {
+        $('.modal').fadeOut();
+      });
+    });
+  </script>
+</body>
+</html>

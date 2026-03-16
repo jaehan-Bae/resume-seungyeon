@@ -1,0 +1,117 @@
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap');
+
+/* Bootstrap Icons */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  color: #222;
+  line-height: 1.5em;
+  margin: 0;
+  background-color: #eee;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  height: 100vh;
+}
+.container > div {
+  float: left;
+  width: 50%;
+  height: 100%;
+  border: 1px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.title {
+  width: 70%;
+}
+.title h1 {
+  font-weight: normal;
+  line-height: 40px;
+  text-align: center;
+}
+.title p {
+  background-color: rgba(135, 207, 235, 0.459);
+  padding: 20px;
+  font-size: 18px;
+  line-height: 40px;
+}
+.right {
+  background-color: rgba(196, 217, 218, 0.387);
+}
+/* Show and Hide Tab Content HTML */
+.tab-inner {
+  width: 700px;
+  margin-top: -500px;
+}
+.tab-btn a {
+  background-color: #000;
+  color: #fff;
+  display: inline-block;
+  width: 150px;
+  text-align: center;
+  padding: 10px;
+  margin-right: -2px;
+  font-weight: 500;
+  text-transform: uppercase;
+  border-top: 3px solid transparent;
+  transition: .35s;
+}
+.tab-btn a:hover {
+  color: royalblue;
+}
+.tab-btn a.active {
+  background-color: #fff;
+  color: royalblue;
+  cursor: pointer;
+  border-top: 3px solid royalblue;
+}
+.tab-content {
+  position: relative;
+}
+.tab {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: .5s;
+  background-color: #fff;
+  padding: 25px;
+}
+.tab h2 {
+  text-transform: uppercase;
+  margin-top: 0;
+}
+.tab img {
+  width: 100%;
+}
+.tab:target {
+  opacity: 1;
+  visibility: visible;
+}
+.tab-content .tab:first-child {
+  opacity: 1;
+  visibility: visible;
+  z-index: 1;
+}
+.tab-content .tab:target {
+  opacity: 1;
+  visibility: visible;
+  z-index: 2; 
+}
+.tab-content .tab:not(:target):not(:first-child) {
+  opacity: 0;
+  visibility: hidden;
+  z-index: 0;
+  transition: opacity 0.35s, visibility 0.35s;
+}

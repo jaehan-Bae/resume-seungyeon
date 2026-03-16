@@ -1,0 +1,108 @@
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+/* Fontawesome 4.7 */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+/* XEION CDN */
+@import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+/* Default Css */
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  margin: 0;
+  background-color: #000;
+  color: #fff;
+  left: 1.6em;
+  font-weight: 300;
+  color: #fff;
+}
+a {
+  text-decoration: none;
+  color: Gainsboro;
+}
+
+/* Style.css */
+.faq {
+  height: 100vh;
+}
+.faq-inner {
+  width: 700px;
+  margin: auto;
+}
+.faq-inner h1 {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 500;
+}
+.accordion {
+  font-size: 26px;
+}
+.accordion .content,
+.accordion .title {
+  background-color: #303030;
+  padding: 10px 15px;
+  margin-bottom: 7px;
+}
+.accordion .title {
+  cursor: pointer;
+}
+.accordion .title.active {
+  background-color: #353b48;
+}
+.accordion .content {
+  display: none;
+  font-size: 20px;
+}
+.accordion .title:after {
+  content: '\f067';
+  font-family: "fontawesome";
+  float: right;
+  margin-top: 5px;
+  transition: .35s;
+}
+.accordion .title.active:after {
+  transform: rotate(45deg);
+}
+.newsletter {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  margin-top: 30px;
+}
+.newsletter p {
+  font-size: 20px;
+}
+.newsletter div {
+  display: flex;
+}
+.newsletter div input[type=email],
+.newsletter div button {
+  border: none;
+  outline: none;
+  height: 60px;
+  vertical-align: middle;
+  font-size: 20px;
+}
+.newsletter div input[type=email] {
+  flex: 7;
+}
+.newsletter div button {
+  background-color: #e84118;
+  color: #fff;
+  cursor: pointer;
+  flex: 3;
+}
+.newsletter div button:after {
+  content: "\f067";
+  font-family: "fontawesome";
+  margin-left: 20px;
+  font-size: 30px;
+  display: inline-block;
+  transform: translateY(4px);
+}
+.content span {
+  display: block;
+  margin-bottom: 15px;
+}

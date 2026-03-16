@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>flex, before, after, hover, fontawesome, transition, transform, overflow</title>
+  <style>
+    /* Google Web Font */
+    @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+    
+    /* Fontawesome 4.7 */
+    @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+    
+    /* Default Css */
+    body {
+      font-family: 'Raleway', sans-serif;
+      color: #222;
+      line-height: 1.5em;
+      font-weight: 300;
+      height: 100vh;
+    }
+    a {
+      color: #222;
+      text-decoration: none;
+    }
+    /* Style.css */
+    .container {
+      height: 100vh;
+    }
+    .container > div {
+      float: left;
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .left, .right {
+      height: 100%;
+    }
+    .title {
+      width: 70%;
+    }
+    .title h1 {
+      font-weight: normal;
+      line-height: 40px;
+      text-align: center;
+    }
+    .title p {
+      background-color: rgba(135, 207, 235, 0.459);
+      padding: 20px;
+      font-size: 18px;
+      line-height: 40px;
+    }
+    .right {
+      background-color: rgb(192, 222, 234);
+    }
+    .sns {
+      background-color: #eee;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.13);
+    }
+    .sns a {
+      border: 1px solid #fff;
+      display: inline-block;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background-color: #fff;
+      text-align: center;
+      line-height: 80px;
+      font-size: 40px;
+      margin: 0 10px;
+      position: relative;
+      overflow: hidden;
+    }
+    .sns a:before {
+      content: '';
+      position: absolute;
+      width: 0%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      transition: .3s;
+    }
+    .sns a:hover:before {
+      width: 100%;
+      /* or height */
+    }
+    .sns a:nth-child(1):before {
+      background-color: #3b5999;
+    }
+    .sns a:nth-child(2):before {
+      background-color: #55acee;
+    }
+    .sns a:nth-child(3):before {
+      background-color: #dd5b39;
+    }
+    .sns a:nth-child(4):before {
+      background-color: #0077b5;
+    }
+    .sns a:nth-child(5):before {
+      background-color: #e4405f;
+    }
+    .sns a .fa {
+      position: relative;
+      transition: .5s;
+    }
+    .sns a:hover .fa {
+      transform: rotateY(360deg);
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="left">
+    <div class="title">
+      <h1>💙Virtual Class before after 3_sns Icon💙</h1>
+      <p>
+        주요 Css속성: flex, inline-block, position, hover, before, fontawesome <br>
+        ☑️오른쪽 ui에 마우스를 태그해주세요.
+      </p>
+      <p>
+        a태그를 inline-block으로 가로정렬. a에 relative 부모속성, a의 before에 absolute 자식속성 설정해 background-color를 nth-child로 다르게 지정. a:before에 hover하지 않았을 때는 width:0 반대의 경우에는 width:100%로 설정해 색상이 드러나게 함. hover 했을 때 아이콘을 rotateY로 움직이게 해 역동적인 애니메이션 완성.
+      </p>
+    </div>
+  </div>
+  <div class="right">
+    <div class="sns">
+      <a href="#none"><i class="fa fa-facebook"></i></a>
+      <a href="#none"><i class="fa fa-twitter"></i></a>
+      <a href="#none"><i class="fa fa-google-plus"></i></a>
+      <a href="#none"><i class="fa fa-linkedin"></i></a>
+      <a href="#none"><i class="fa fa-instagram"></i></a>
+    </div>
+  </div>
+</div>
+</body>
+</html>
