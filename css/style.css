@@ -823,7 +823,7 @@ button{
   transform:translateY(14px);
   transition:opacity .55s ease,transform .55s ease;
   will-change:opacity,transform;
-  margin-bottom: 100px;
+  margin-bottom: 120px;
 }
 .pf-reveal.is-visible{
   opacity:1;
@@ -831,7 +831,7 @@ button{
 }
 
 /* ===== Contact section  ===== */
-#toy-projects .pf-toy-grid {
+.pf-toy-grid {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -840,11 +840,11 @@ button{
   gap: 24px;
 }
 
-#toy-projects .pf-toy-item {
+.pf-toy-item {
   min-width: 0;
 }
 
-#toy-projects .pf-toy-link {
+.pf-toy-link {
   display: block;
   text-decoration: none;
   color: inherit;
@@ -855,12 +855,12 @@ button{
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-#toy-projects .pf-toy-link:hover {
+.pf-toy-link:hover {
   transform: translateY(-6px);
   box-shadow: 0 14px 30px rgba(0, 0, 0, 0.12);
 }
 
-#toy-projects .pf-toy-thumb {
+.pf-toy-thumb {
   display: block;
   width: 100%;
   aspect-ratio: 4 / 4;
@@ -869,53 +869,60 @@ button{
   background-repeat: no-repeat;
 }
 
-/* 혹시 세로로 긴 썸네일이 많으면 contain 버전도 가능 */
-/*
-#toy-projects .pf-toy-thumb {
-  background-size: contain;
-  background-color: #efefef;
-}
-*/
-.toy-center{
+.toy-center {
   min-height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.toy-center > .pf-toy-grid{
+.toy-center > .pf-toy-grid {
   width: 100%;
 }
+
 @media (max-width: 1400px) {
-  #toy-projects .pf-toy-grid {
+  .pf-toy-grid {
     grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 }
 
 @media (max-width: 1100px) {
-  #toy-projects .pf-toy-grid {
+  .pf-toy-grid {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
 
 @media (max-width: 860px) {
-  #toy-projects .pf-toy-grid {
+  .pf-toy-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 18px;
   }
 }
 
 @media (max-width: 620px) {
-  #toy-projects .pf-toy-grid {
+  .pf-toy-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 14px;
   }
 }
 
 @media (max-width: 420px) {
-  #toy-projects .pf-toy-grid {
+  .pf-toy-grid {
     grid-template-columns: 1fr;
   }
+}
+
+/* ===== Design section  ===== */
+#design-projects .pf-toy-thumb {
+  aspect-ratio: 4 / 8;
+}
+.pf-design-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 24px;
 }
 
 /* ===== Contact section  ===== */
@@ -923,6 +930,7 @@ button{
   padding: 34px;
   position: relative;
   overflow: hidden;
+  margin-bottom: -100px;
 }
 
 /* soft background  */
