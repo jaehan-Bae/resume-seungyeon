@@ -842,6 +842,7 @@ button{
 
 .pf-toy-item {
   min-width: 0;
+  border: 1px solid #efefef;
 }
 
 .pf-toy-link {
@@ -914,14 +915,18 @@ button{
 
 /* ===== Design section  ===== */
 #design-projects .pf-toy-thumb {
-  aspect-ratio: 4 / 8;
-}
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;}
 .pf-design-grid {
   list-style: none;
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 2fr));
   gap: 24px;
 }
 
