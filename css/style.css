@@ -840,9 +840,23 @@ button{
   gap: 24px;
 }
 
-.pf-toy-item {
+#design-projects .pf-toy-item {
   min-width: 0;
+  min-height: 0;
+  height: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
   border: 1px solid #efefef;
+}
+
+.pf-design-grid .pf-toy-item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
 }
 
 .pf-toy-link {
@@ -872,6 +886,7 @@ button{
 
 .toy-center {
   min-height: 80vh;
+  padding: 30px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -880,6 +895,8 @@ button{
 .toy-center > .pf-toy-grid {
   width: 100%;
 }
+
+
 
 @media (max-width: 1400px) {
   .pf-toy-grid {
@@ -917,19 +934,22 @@ button{
 #design-projects .pf-toy-thumb {
   display: block;
   width: 100%;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 1/1;
   background-size: cover;
   background-position: center top;
-  background-repeat: no-repeat;}
-.pf-design-grid {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 2fr));
-  gap: 24px;
+  background-repeat: no-repeat;
 }
 
+#design-projects .toy-center > .pf-design-grid {
+  display: grid;
+  height: 100%;
+  min-height: 0;
+  box-sizing: border-box;
+
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
 /* ===== Contact section  ===== */
 .pf-contact{
   padding: 34px;
